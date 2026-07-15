@@ -1,0 +1,16 @@
+[package]
+name = "bt-bridge-core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow    = "1"
+bluer     = { version = "0.17.4", features = ["full"] }
+bytes     = "1"
+futures   = "0.3"
+mdns-sd   = "0.20"
+serde     = { version = "1", features = ["derive"] }
+tokio     = { version = "1", features = ["full"] }
+toml      = "0.8"
+tracing   = "0.1"
+uuid      = { version = "1", features = ["v4"] }

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "org.bluetooth.descriptor.gatt.characteristic_extended_properties",
+    "name": "Characteristic Extended Properties",
+    "code": "0x2900",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.gatt.characteristic_user_description",
+    "name": "Characteristic User Description",
+    "code": "0x2901",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.gatt.client_characteristic_configuration",
+    "name": "Client Characteristic Configuration",
+    "code": "0x2902",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.gatt.server_characteristic_configuration",
+    "name": "Server Characteristic Configuration",
+    "code": "0x2903",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.gatt.characteristic_presentation_format",
+    "name": "Characteristic Presentation Format",
+    "code": "0x2904",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.gatt.characteristic_aggregate_format",
+    "name": "Characteristic Aggregate Format",
+    "code": "0x2905",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.valid_range",
+    "name": "Valid Range",
+    "code": "0x2906",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.external_report_reference",
+    "name": "External Report Reference",
+    "code": "0x2907",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.report_reference",
+    "name": "Report Reference",
+    "code": "0x2908",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.number_of_digitals",
+    "name": "Number of Digitals",
+    "code": "0x2909",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.value_trigger_setting",
+    "name": "Value Trigger Setting",
+    "code": "0x290A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.es_configuration",
+    "name": "Environmental Sensing Configuration",
+    "code": "0x290B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.es_measurement",
+    "name": "Environmental Sensing Measurement",
+    "code": "0x290C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.es_trigger_setting",
+    "name": "Environmental Sensing Trigger Setting",
+    "code": "0x290D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.descriptor.time_trigger_setting",
+    "name": "Time Trigger Setting",
+    "code": "0x290E",
+    "specification": "GSS"
+  }
+]

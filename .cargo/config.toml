@@ -1,0 +1,5 @@
+[alias]
+# Cross-compile the DIRCON client simulator to a Windows exe (runs under Wine,
+# exercising ws2_32 like the real training apps). Per-package on purpose:
+# building the whole workspace for the Windows target would fail on bluer.
+sim-exe = "build -p dircon-sim --release --target x86_64-pc-windows-gnu"

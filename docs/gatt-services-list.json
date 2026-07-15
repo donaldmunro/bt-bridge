@@ -1,0 +1,236 @@
+[
+  {
+    "id": "org.bluetooth.service.generic_access",
+    "name": "Generic Access",
+    "code": "0x1800",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.generic_attribute",
+    "name": "Generic Attribute",
+    "code": "0x1801",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.immediate_alert",
+    "name": "Immediate Alert",
+    "code": "0x1802",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.link_loss",
+    "name": "Link Loss",
+    "code": "0x1803",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.tx_power",
+    "name": "Tx Power",
+    "code": "0x1804",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.current_time",
+    "name": "Current Time Service",
+    "code": "0x1805",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.reference_time_update",
+    "name": "Reference Time Update Service",
+    "code": "0x1806",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.next_dst_change",
+    "name": "Next DST Change Service",
+    "code": "0x1807",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.glucose",
+    "name": "Glucose",
+    "code": "0x1808",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.health_thermometer",
+    "name": "Health Thermometer",
+    "code": "0x1809",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.device_information",
+    "name": "Device Information",
+    "code": "0x180A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.heart_rate",
+    "name": "Heart Rate",
+    "code": "0x180D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.phone_alert_status",
+    "name": "Phone Alert Status Service",
+    "code": "0x180E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.battery_service",
+    "name": "Battery Service",
+    "code": "0x180F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.blood_pressure",
+    "name": "Blood Pressure",
+    "code": "0x1810",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.alert_notification",
+    "name": "Alert Notification Service",
+    "code": "0x1811",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.human_interface_device",
+    "name": "Human Interface Device",
+    "code": "0x1812",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.scan_parameters",
+    "name": "Scan Parameters",
+    "code": "0x1813",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.running_speed_and_cadence",
+    "name": "Running Speed and Cadence",
+    "code": "0x1814",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.automation_io",
+    "name": "Automation IO",
+    "code": "0x1815",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.cycling_speed_and_cadence",
+    "name": "Cycling Speed and Cadence",
+    "code": "0x1816",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.cycling_power",
+    "name": "Cycling Power",
+    "code": "0x1818",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.location_and_navigation",
+    "name": "Location and Navigation",
+    "code": "0x1819",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.environmental_sensing",
+    "name": "Environmental Sensing",
+    "code": "0x181A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.body_composition",
+    "name": "Body Composition",
+    "code": "0x181B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.user_data",
+    "name": "User Data",
+    "code": "0x181C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.weight_scale",
+    "name": "Weight Scale",
+    "code": "0x181D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.bond_management",
+    "name": "Bond Management Service",
+    "code": "0x181E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.continuous_glucose_monitoring",
+    "name": "Continuous Glucose Monitoring",
+    "code": "0x181F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.internet_protocol_support",
+    "name": "Internet Protocol Support Service",
+    "code": "0x1820",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.indoor_positioning",
+    "name": "Indoor Positioning",
+    "code": "0x1821",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.pulse_oximeter",
+    "name": "Pulse Oximeter Service",
+    "code": "0x1822",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.http_proxy",
+    "name": "HTTP Proxy",
+    "code": "0x1823",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.transport_discovery",
+    "name": "Transport Discovery",
+    "code": "0x1824",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.object_transfer",
+    "name": "Object Transfer Service",
+    "code": "0x1825",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.fitness_machine",
+    "name": "Fitness Machine",
+    "code": "0x1826",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.mesh_provisioning",
+    "name": "Mesh Provisioning Service",
+    "code": "0x1827",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.mesh_proxy",
+    "name": "Mesh Proxy Service",
+    "code": "0x1828",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.service.reconnection_configuration",
+    "name": "Reconnection Configuration",
+    "code": "0x1829",
+    "specification": "GSS"
+  }
+]

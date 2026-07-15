@@ -1,0 +1,13 @@
+[package]
+name = "dircon-sim"
+version = "0.1.0"
+edition = "2024"
+
+# Networking-only DIRCON client simulator. Deliberately does NOT depend on
+# bt-bridge-core: its independent frame parser cross-checks the bridge, and
+# core's bluer dependency is Linux-only, which would break the Windows target
+# (cargo build -p dircon-sim --target x86_64-pc-windows-gnu, alias: cargo sim-exe).
+[dependencies]
+anyhow = "1"
+clap   = { version = "4", features = ["derive"] }
+uuid   = "1"

@@ -1,0 +1,18 @@
+[package]
+name = "bt-bridge-cli"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "bt-bridge"
+path = "src/main.rs"
+
+[dependencies]
+bt-bridge-core = { path = "../core" }
+anyhow             = "1"
+clap               = { version = "4", features = ["derive"] }
+serde_json         = "1"
+tokio              = { version = "1", features = ["full"] }
+tracing            = "0.1"
+uuid               = "1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }

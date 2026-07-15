@@ -1,0 +1,1304 @@
+[
+  {
+    "id": "org.bluetooth.characteristic.gap.device_name",
+    "name": "Device Name",
+    "code": "0x2A00",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.gap.appearance",
+    "name": "Appearance",
+    "code": "0x2A01",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.gap.peripheral_privacy_flag",
+    "name": "Peripheral Privacy Flag",
+    "code": "0x2A02",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.gap.reconnection_address",
+    "name": "Reconnection Address",
+    "code": "0x2A03",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.gap.peripheral_preferred_connection_parameters",
+    "name": "Peripheral Preferred Connection Parameters",
+    "code": "0x2A04",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.gatt.service_changed",
+    "name": "Service Changed",
+    "code": "0x2A05",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.alert_level",
+    "name": "Alert Level",
+    "code": "0x2A06",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.tx_power_level",
+    "name": "Tx Power Level",
+    "code": "0x2A07",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.date_time",
+    "name": "Date Time",
+    "code": "0x2A08",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.day_of_week",
+    "name": "Day of Week",
+    "code": "0x2A09",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.day_date_time",
+    "name": "Day Date Time",
+    "code": "0x2A0A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.exact_time_100",
+    "name": "Exact Time 100",
+    "code": "0x2A0B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.exact_time_256",
+    "name": "Exact Time 256",
+    "code": "0x2A0C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.dst_offset",
+    "name": "DST Offset",
+    "code": "0x2A0D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.time_zone",
+    "name": "Time Zone",
+    "code": "0x2A0E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.local_time_information",
+    "name": "Local Time Information",
+    "code": "0x2A0F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.secondary_time_zone",
+    "name": "Secondary Time Zone",
+    "code": "0x2A10",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.time_with_dst",
+    "name": "Time with DST",
+    "code": "0x2A11",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.time_accuracy",
+    "name": "Time Accuracy",
+    "code": "0x2A12",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.time_source",
+    "name": "Time Source",
+    "code": "0x2A13",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.reference_time_information",
+    "name": "Reference Time Information",
+    "code": "0x2A14",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.time_broadcast",
+    "name": "Time Broadcast",
+    "code": "0x2A15",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.time_update_control_point",
+    "name": "Time Update Control Point",
+    "code": "0x2A16",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.time_update_state",
+    "name": "Time Update State",
+    "code": "0x2A17",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.glucose_measurement",
+    "name": "Glucose Measurement",
+    "code": "0x2A18",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.battery_level",
+    "name": "Battery Level",
+    "code": "0x2A19",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.battery_power_state",
+    "name": "Battery Power State",
+    "code": "0x2A1A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.battery_level_state",
+    "name": "Battery Level State",
+    "code": "0x2A1B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.temperature_measurement",
+    "name": "Temperature Measurement",
+    "code": "0x2A1C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.temperature_type",
+    "name": "Temperature Type",
+    "code": "0x2A1D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.intermediate_temperature",
+    "name": "Intermediate Temperature",
+    "code": "0x2A1E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.temperature_celsius",
+    "name": "Temperature Celsius",
+    "code": "0x2A1F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.temperature_fahrenheit",
+    "name": "Temperature Fahrenheit",
+    "code": "0x2A20",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.measurement_interval",
+    "name": "Measurement Interval",
+    "code": "0x2A21",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.boot_keyboard_input_report",
+    "name": "Boot Keyboard Input Report",
+    "code": "0x2A22",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.system_id",
+    "name": "System ID",
+    "code": "0x2A23",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.model_number_string",
+    "name": "Model Number String",
+    "code": "0x2A24",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.serial_number_string",
+    "name": "Serial Number String",
+    "code": "0x2A25",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.firmware_revision_string",
+    "name": "Firmware Revision String",
+    "code": "0x2A26",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.hardware_revision_string",
+    "name": "Hardware Revision String",
+    "code": "0x2A27",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.software_revision_string",
+    "name": "Software Revision String",
+    "code": "0x2A28",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.manufacturer_name_string",
+    "name": "Manufacturer Name String",
+    "code": "0x2A29",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.ieee_11073-20601_regulatory_certification_data_list",
+    "name": "IEEE 11073-20601 Regulatory Certification Data List",
+    "code": "0x2A2A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.current_time",
+    "name": "Current Time",
+    "code": "0x2A2B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.magnetic_declination",
+    "name": "Magnetic Declination",
+    "code": "0x2A2C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.position_2d",
+    "name": "Position 2D",
+    "code": "0x2A2F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.position_3d",
+    "name": "Position 3D",
+    "code": "0x2A30",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.scan_refresh",
+    "name": "Scan Refresh",
+    "code": "0x2A31",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.boot_keyboard_output_report",
+    "name": "Boot Keyboard Output Report",
+    "code": "0x2A32",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.boot_mouse_input_report",
+    "name": "Boot Mouse Input Report",
+    "code": "0x2A33",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.glucose_measurement_context",
+    "name": "Glucose Measurement Context",
+    "code": "0x2A34",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.blood_pressure_measurement",
+    "name": "Blood Pressure Measurement",
+    "code": "0x2A35",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.intermediate_cuff_pressure",
+    "name": "Intermediate Cuff Pressure",
+    "code": "0x2A36",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.heart_rate_measurement",
+    "name": "Heart Rate Measurement",
+    "code": "0x2A37",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.body_sensor_location",
+    "name": "Body Sensor Location",
+    "code": "0x2A38",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.heart_rate_control_point",
+    "name": "Heart Rate Control Point",
+    "code": "0x2A39",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.removable",
+    "name": "Removable",
+    "code": "0x2A3A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.service_required",
+    "name": "Service Required",
+    "code": "0x2A3B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.scientific_temperature_celsius",
+    "name": "Scientific Temperature Celsius",
+    "code": "0x2A3C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.string",
+    "name": "String",
+    "code": "0x2A3D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.network_availability",
+    "name": "Network Availability",
+    "code": "0x2A3E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.alert_status",
+    "name": "Alert Status",
+    "code": "0x2A3F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.ringer_control_point",
+    "name": "Ringer Control point",
+    "code": "0x2A40",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.ringer_setting",
+    "name": "Ringer Setting",
+    "code": "0x2A41",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.alert_category_id_bit_mask",
+    "name": "Alert Category ID Bit Mask",
+    "code": "0x2A42",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.alert_category_id",
+    "name": "Alert Category ID",
+    "code": "0x2A43",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.alert_notification_control_point",
+    "name": "Alert Notification Control Point",
+    "code": "0x2A44",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.unread_alert_status",
+    "name": "Unread Alert Status",
+    "code": "0x2A45",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.new_alert",
+    "name": "New Alert",
+    "code": "0x2A46",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.supported_new_alert_category",
+    "name": "Supported New Alert Category",
+    "code": "0x2A47",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.supported_unread_alert_category",
+    "name": "Supported Unread Alert Category",
+    "code": "0x2A48",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.blood_pressure_feature",
+    "name": "Blood Pressure Feature",
+    "code": "0x2A49",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.hid_information",
+    "name": "HID Information",
+    "code": "0x2A4A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.report_map",
+    "name": "Report Map",
+    "code": "0x2A4B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.hid_control_point",
+    "name": "HID Control Point",
+    "code": "0x2A4C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.report",
+    "name": "Report",
+    "code": "0x2A4D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.protocol_mode",
+    "name": "Protocol Mode",
+    "code": "0x2A4E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.scan_interval_window",
+    "name": "Scan Interval Window",
+    "code": "0x2A4F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.pnp_id",
+    "name": "PnP ID",
+    "code": "0x2A50",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.glucose_feature",
+    "name": "Glucose Feature",
+    "code": "0x2A51",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.record_access_control_point",
+    "name": "Record Access Control Point",
+    "code": "0x2A52",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.rsc_measurement",
+    "name": "RSC Measurement",
+    "code": "0x2A53",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.rsc_feature",
+    "name": "RSC Feature",
+    "code": "0x2A54",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.sc_control_point",
+    "name": "SC Control Point",
+    "code": "0x2A55",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.digital",
+    "name": "Digital",
+    "code": "0x2A56",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.digital_output",
+    "name": "Digital Output",
+    "code": "0x2A57",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.analog",
+    "name": "Analog",
+    "code": "0x2A58",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.analog_output",
+    "name": "Analog Output",
+    "code": "0x2A59",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.aggregate",
+    "name": "Aggregate",
+    "code": "0x2A5A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.csc_measurement",
+    "name": "CSC Measurement",
+    "code": "0x2A5B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.csc_feature",
+    "name": "CSC Feature",
+    "code": "0x2A5C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.sensor_location",
+    "name": "Sensor Location",
+    "code": "0x2A5D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.plx_spot_check_measurement",
+    "name": "PLX Spot-Check Measurement",
+    "code": "0x2A5E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.plx_continuous_measurement",
+    "name": "PLX Continuous Measurement Characteristic",
+    "code": "0x2A5F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.plx_features",
+    "name": "PLX Features",
+    "code": "0x2A60",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.pulse_oximetry_control_point",
+    "name": "Pulse Oximetry Control Point",
+    "code": "0x2A62",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cycling_power_measurement",
+    "name": "Cycling Power Measurement",
+    "code": "0x2A63",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cycling_power_vector",
+    "name": "Cycling Power Vector",
+    "code": "0x2A64",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cycling_power_feature",
+    "name": "Cycling Power Feature",
+    "code": "0x2A65",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cycling_power_control_point",
+    "name": "Cycling Power Control Point",
+    "code": "0x2A66",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.location_and_speed",
+    "name": "Location and Speed Characteristic",
+    "code": "0x2A67",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.navigation",
+    "name": "Navigation",
+    "code": "0x2A68",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.position_quality",
+    "name": "Position Quality",
+    "code": "0x2A69",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.ln_feature",
+    "name": "LN Feature",
+    "code": "0x2A6A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.ln_control_point",
+    "name": "LN Control Point",
+    "code": "0x2A6B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.elevation",
+    "name": "Elevation",
+    "code": "0x2A6C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.pressure",
+    "name": "Pressure",
+    "code": "0x2A6D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.temperature",
+    "name": "Temperature",
+    "code": "0x2A6E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.humidity",
+    "name": "Humidity",
+    "code": "0x2A6F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.true_wind_speed",
+    "name": "True Wind Speed",
+    "code": "0x2A70",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.true_wind_direction",
+    "name": "True Wind Direction",
+    "code": "0x2A71",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.apparent_wind_speed",
+    "name": "Apparent Wind Speed",
+    "code": "0x2A72",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.apparent_wind_direction",
+    "name": "Apparent Wind Direction",
+    "code": "0x2A73",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.gust_factor",
+    "name": "Gust Factor",
+    "code": "0x2A74",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.pollen_concentration",
+    "name": "Pollen Concentration",
+    "code": "0x2A75",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.uv_index",
+    "name": "UV Index",
+    "code": "0x2A76",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.irradiance",
+    "name": "Irradiance",
+    "code": "0x2A77",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.rainfall",
+    "name": "Rainfall",
+    "code": "0x2A78",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.wind_chill",
+    "name": "Wind Chill",
+    "code": "0x2A79",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.heat_index",
+    "name": "Heat Index",
+    "code": "0x2A7A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.dew_point",
+    "name": "Dew Point",
+    "code": "0x2A7B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.descriptor_value_changed",
+    "name": "Descriptor Value Changed",
+    "code": "0x2A7D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.aerobic_heart_rate_lower_limit",
+    "name": "Aerobic Heart Rate Lower Limit",
+    "code": "0x2A7E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.aerobic_threshold",
+    "name": "Aerobic Threshold",
+    "code": "0x2A7F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.age",
+    "name": "Age",
+    "code": "0x2A80",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.anaerobic_heart_rate_lower_limit",
+    "name": "Anaerobic Heart Rate Lower Limit",
+    "code": "0x2A81",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.anaerobic_heart_rate_upper_limit",
+    "name": "Anaerobic Heart Rate Upper Limit",
+    "code": "0x2A82",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.anaerobic_threshold",
+    "name": "Anaerobic Threshold",
+    "code": "0x2A83",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.aerobic_heart_rate_upper_limit",
+    "name": "Aerobic Heart Rate Upper Limit",
+    "code": "0x2A84",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.date_of_birth",
+    "name": "Date of Birth",
+    "code": "0x2A85",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.date_of_threshold_assessment",
+    "name": "Date of Threshold Assessment",
+    "code": "0x2A86",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.email_address",
+    "name": "Email Address",
+    "code": "0x2A87",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.fat_burn_heart_rate_lower_limit",
+    "name": "Fat Burn Heart Rate Lower Limit",
+    "code": "0x2A88",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.fat_burn_heart_rate_upper_limit",
+    "name": "Fat Burn Heart Rate Upper Limit",
+    "code": "0x2A89",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.first_name",
+    "name": "First Name",
+    "code": "0x2A8A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.five_zone_heart_rate_limits",
+    "name": "Five Zone Heart Rate Limits",
+    "code": "0x2A8B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.gender",
+    "name": "Gender",
+    "code": "0x2A8C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.heart_rate_max",
+    "name": "Heart Rate Max",
+    "code": "0x2A8D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.height",
+    "name": "Height",
+    "code": "0x2A8E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.hip_circumference",
+    "name": "Hip Circumference",
+    "code": "0x2A8F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.last_name",
+    "name": "Last Name",
+    "code": "0x2A90",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.maximum_recommended_heart_rate",
+    "name": "Maximum Recommended Heart Rate",
+    "code": "0x2A91",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.resting_heart_rate",
+    "name": "Resting Heart Rate",
+    "code": "0x2A92",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.sport_type_for_aerobic_and_anaerobic_thresholds",
+    "name": "Sport Type for Aerobic and Anaerobic Thresholds",
+    "code": "0x2A93",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.three_zone_heart_rate_limits",
+    "name": "Three Zone Heart Rate Limits",
+    "code": "0x2A94",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.two_zone_heart_rate_limit",
+    "name": "Two Zone Heart Rate Limit",
+    "code": "0x2A95",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.vo2_max",
+    "name": "VO2 Max",
+    "code": "0x2A96",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.waist_circumference",
+    "name": "Waist Circumference",
+    "code": "0x2A97",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.weight",
+    "name": "Weight",
+    "code": "0x2A98",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.database_change_increment",
+    "name": "Database Change Increment",
+    "code": "0x2A99",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.user_index",
+    "name": "User Index",
+    "code": "0x2A9A",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.body_composition_feature",
+    "name": "Body Composition Feature",
+    "code": "0x2A9B",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.body_composition_measurement",
+    "name": "Body Composition Measurement",
+    "code": "0x2A9C",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.weight_measurement",
+    "name": "Weight Measurement",
+    "code": "0x2A9D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.weight_scale_feature",
+    "name": "Weight Scale Feature",
+    "code": "0x2A9E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.user_control_point",
+    "name": "User Control Point",
+    "code": "0x2A9F",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.Magnetic_flux_density_2D",
+    "name": "Magnetic Flux Density - 2D",
+    "code": "0x2AA0",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.Magnetic_flux_density_3D",
+    "name": "Magnetic Flux Density - 3D",
+    "code": "0x2AA1",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.language",
+    "name": "Language",
+    "code": "0x2AA2",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.barometric_pressure_trend",
+    "name": "Barometric Pressure Trend",
+    "code": "0x2AA3",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.bond_management_control_point",
+    "name": "Bond Management Control Point",
+    "code": "0x2AA4",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.bond_management_feature",
+    "name": "Bond Management Features",
+    "code": "0x2AA5",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.gap.central_address_resolution",
+    "name": "Central Address Resolution",
+    "code": "0x2AA6",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cgm_measurement",
+    "name": "CGM Measurement",
+    "code": "0x2AA7",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cgm_feature",
+    "name": "CGM Feature",
+    "code": "0x2AA8",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cgm_status",
+    "name": "CGM Status",
+    "code": "0x2AA9",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cgm_session_start_time",
+    "name": "CGM Session Start Time",
+    "code": "0x2AAA",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cgm_session_run_time",
+    "name": "CGM Session Run Time",
+    "code": "0x2AAB",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cgm_specific_ops_control_point",
+    "name": "CGM Specific Ops Control Point",
+    "code": "0x2AAC",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.indoor_positioning_configuration",
+    "name": "Indoor Positioning Configuration",
+    "code": "0x2AAD",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.latitude",
+    "name": "Latitude",
+    "code": "0x2AAE",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.Longitude",
+    "name": "Longitude",
+    "code": "0x2AAF",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.local_north_coordinate",
+    "name": "Local North Coordinate",
+    "code": "0x2AB0",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.local_east_coordinate",
+    "name": "Local East Coordinate",
+    "code": "0x2AB1",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.floor_number",
+    "name": "Floor Number",
+    "code": "0x2AB2",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.altitude",
+    "name": "Altitude",
+    "code": "0x2AB3",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.uncertainty",
+    "name": "Uncertainty",
+    "code": "0x2AB4",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.location_name",
+    "name": "Location Name",
+    "code": "0x2AB5",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.uri",
+    "name": "URI",
+    "code": "0x2AB6",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.http_headers",
+    "name": "HTTP Headers",
+    "code": "0x2AB7",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.http_status_code",
+    "name": "HTTP Status Code",
+    "code": "0x2AB8",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.http_entity_body",
+    "name": "HTTP Entity Body",
+    "code": "0x2AB9",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.http_control_point",
+    "name": "HTTP Control Point",
+    "code": "0x2ABA",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.https_security",
+    "name": "HTTPS Security",
+    "code": "0x2ABB",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.tds_control_point",
+    "name": "TDS Control Point",
+    "code": "0x2ABC",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.ots_feature",
+    "name": "OTS Feature",
+    "code": "0x2ABD",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_name",
+    "name": "Object Name",
+    "code": "0x2ABE",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_type",
+    "name": "Object Type",
+    "code": "0x2ABF",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_size",
+    "name": "Object Size",
+    "code": "0x2AC0",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_first_created",
+    "name": "Object First-Created",
+    "code": "0x2AC1",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_last_modified",
+    "name": "Object Last-Modified",
+    "code": "0x2AC2",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_id",
+    "name": "Object ID",
+    "code": "0x2AC3",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_properties",
+    "name": "Object Properties",
+    "code": "0x2AC4",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_action_control_point",
+    "name": "Object Action Control Point",
+    "code": "0x2AC5",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_list_control_point",
+    "name": "Object List Control Point",
+    "code": "0x2AC6",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_list_filter",
+    "name": "Object List Filter",
+    "code": "0x2AC7",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.object_changed",
+    "name": "Object Changed",
+    "code": "0x2AC8",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.resolvable_private_address_only",
+    "name": "Resolvable Private Address Only",
+    "code": "0x2AC9",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.fitness_machine_feature",
+    "name": "Fitness Machine Feature",
+    "code": "0x2ACC",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.treadmill_data",
+    "name": "Treadmill Data",
+    "code": "0x2ACD",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.cross_trainer_data",
+    "name": "Cross Trainer Data",
+    "code": "0x2ACE",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.step_climber_data",
+    "name": "Step Climber Data",
+    "code": "0x2ACF",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.stair_climber_data",
+    "name": "Stair Climber Data",
+    "code": "0x2AD0",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.rower_data",
+    "name": "Rower Data",
+    "code": "0x2AD1",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.indoor_bike_data",
+    "name": "Indoor Bike Data",
+    "code": "0x2AD2",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.training_status",
+    "name": "Training Status",
+    "code": "0x2AD3",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.supported_speed_range",
+    "name": "Supported Speed Range",
+    "code": "0x2AD4",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.supported_inclination_range",
+    "name": "Supported Inclination Range",
+    "code": "0x2AD5",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.supported_resistance_level_range",
+    "name": "Supported Resistance Level Range",
+    "code": "0x2AD6",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.supported_heart_rate_range",
+    "name": "Supported Heart Rate Range",
+    "code": "0x2AD7",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.supported_power_range",
+    "name": "Supported Power Range",
+    "code": "0x2AD8",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.fitness_machine_control_point",
+    "name": "Fitness Machine Control Point",
+    "code": "0x2AD9",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.fitness_machine_status",
+    "name": "Fitness Machine Status",
+    "code": "0x2ADA",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.date_utc",
+    "name": "Date UTC",
+    "code": "0x2AED",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.rc_feature",
+    "name": "RC Feature",
+    "code": "0x2B1D",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.rc_settings",
+    "name": "RC Settings",
+    "code": "0x2B1E",
+    "specification": "GSS"
+  },
+  {
+    "id": "org.bluetooth.characteristic.reconnection_configuration_control_point",
+    "name": "Reconnection Configuration Control Point",
+    "code": "0x2B1F",
+    "specification": "GSS"
+  }
+]
