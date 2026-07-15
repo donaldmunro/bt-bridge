@@ -1,5 +1,4 @@
 - [Introduction](#introduction)
-  - [but may be possible to copy the installed files from a Windows machine.](#but-may-be-possible-to-copy-the-installed-files-from-a-windows-machine)
   - [Requirements](#requirements)
 - [Associated Software](#associated-software)
   - [Wine](#wine)
@@ -36,6 +35,7 @@ or equivalent mobile application.
 
 [^whoosh-note]: See the MyWhoosh section - not directly installable due to its Microsoft Store dependencies,
 but may be possible to copy the installed files from a Windows machine.
+
 ---
 
 ## Requirements
