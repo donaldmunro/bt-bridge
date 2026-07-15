@@ -194,6 +194,23 @@ follow the same procedure to add a new non-Steam game in the Steam application L
 
 Note using Vulkan (winetricks dxvk) both improves frame rate and rendering quality noticeably.
 
+There is a script in this repository [ancillary/scripts/run-tpv.sh](ancillary/scripts/run-tpv.sh) that will install 
+or run TPV with Wine:
+
+```sh
+./run-tpv.sh --help
+Usage: run-tpv.sh [OPTIONS]
+
+  (none)        Launch TPVirtual without debug logs
+  --debug       Launch TPVirtual with WINEDEBUG logging to ./log
+  --recreate    Delete Wine prefix, reinstall, then exit
+  --reinstall   Reinstall without deleting prefix, then exit
+  -h, --help    Show this help
+```
+
+This script will install into a Wine prefix `.wine-tpv` i.e '`~/.wine-tpv` in your home directory,
+although you can change the prefix by setting the `WINEPREFIX` environment variable in the script.
+
 ## Zwift
 
 Unfortunately Zwift is more complicated to install and run on Linux, as it has a number of dependencies such as
