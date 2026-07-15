@@ -262,7 +262,7 @@ Any feedback on running MyWhoosh on Linux would be appreciated, and if it is pos
 
 ## Installing bt-bridge
 
-You can download the latest release from the [Releases page](http://TODO:.com) or build from source using
+You can download the latest release from the [Releases page](https://github.com/donaldmunro/bt-bridge/releases/tag/v0.1.0) or build from source using
 [Rust](https://www.rust-lang.org/tools/install) and Cargo:
 
 ```sh
