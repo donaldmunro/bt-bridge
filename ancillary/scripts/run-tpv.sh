@@ -1,6 +1,6 @@
 #!/bin/bash
 PREFIX_NAME=".wine-tpv"
-INSTALLER_NAME='TPVirtual-Installer_v4b.exe'
+INSTALLER_NAME='TPVirtual-Installer_v5.exe'
 #USER="someone" # uncomment if Wine account is not the same as your Linux username.
 
 export WINEPREFIX=~/$PREFIX_NAME

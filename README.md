@@ -33,6 +33,11 @@ network, and bt-bridge provides a way to make any Bluetooth LE device appear as 
 still identified by its Bluetooth name in the pairing screen, and without requiring a Companion 
 or equivalent mobile application.
 
+Note if you already are using a Wahoo trainer with a DirectConnect Ethernet dongle then the
+Wahoo trainer itself will be found on the network even in Linux, so you only need bt-bridge
+for your HR monitor and/or power meter. Other trainer models will still need to be bridged
+using bt-bridge.
+
 [^whoosh-note]: See the MyWhoosh section - not directly installable due to its Microsoft Store dependencies,
 but may be possible to copy the installed files from a Windows machine.
 
