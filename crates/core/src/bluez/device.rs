@@ -362,9 +362,9 @@ impl BlueZDevice
          {
             if tx.send((uuid, value)).is_err()
             {
-               // No DIRCON clients connected; re-armed by ensure_notify on next subscribe.
-               debug!(%addr, char = %uuid, "all notification receivers dropped; forwarding stopped");
-               return;
+               // No DIRCON clients connected right now; keep the BLE stream alive
+               // so forwarding resumes once a client subscribes again.
+               debug!(%addr, char = %uuid, "no notification receivers; dropping value");
             }
          }
          info!(%addr, char = %uuid,
