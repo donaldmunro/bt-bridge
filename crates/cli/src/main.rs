@@ -18,9 +18,10 @@ struct Args
    #[arg(long, default_value = "35100")]
    port: u16,
 
-   /// Restrict to a single BLE device by address (e.g. AA:BB:CC:DD:EE:FF)
-   #[arg(long, global = true)]
-   device: Option<String>,
+   /// Restrict to one or more BLE devices by address (e.g. AA:BB:CC:DD:EE:FF).
+   /// Repeat the flag or pass a comma-separated list.
+   #[arg(long, global = true, value_delimiter = ',')]
+   device: Vec<String>,
 
    /// Bridge all connected BLE devices (this is the default; cannot be combined with --device)
    #[arg(long, conflicts_with = "device")]
@@ -74,12 +75,12 @@ async fn main() -> Result<()>
    let adapter = init_adapter(&session).await?;
    let mut devices = enumerate_connected_devices(&adapter).await?;
 
-   if let Some(addr) = allowed
+   if !allowed.is_empty()
    {
-      devices.retain(|d| d.addr == addr);
+      devices.retain(|d| allowed.contains(&d.addr));
       if devices.is_empty()
       {
-         bail!("no connected BLE device found with address {addr}");
+         bail!("no connected BLE device found with addresses {allowed:?}");
       }
    }
 
@@ -142,9 +143,9 @@ async fn list(args: &Args, json: bool) -> Result<()>
    let session = init_session().await?;
    let adapter = init_adapter(&session).await?;
    let mut devices = enumerate_connected_devices(&adapter).await?;
-   if let Some(addr) = allowed
+   if !allowed.is_empty()
    {
-      devices.retain(|d| d.addr == addr);
+      devices.retain(|d| allowed.contains(&d.addr));
    }
 
    // The mDNS instance name each device gets (None: not bridged).
@@ -241,14 +242,19 @@ fn characteristic_label(uuid: uuid::Uuid) -> String
    }
 }
 
-fn parse_allowed(args: &Args) -> Result<Option<Address>>
+fn parse_allowed(args: &Args) -> Result<Vec<Address>>
 {
-   match &args.device
+   let mut out = Vec::new();
+   for s in &args.device
    {
-      | Some(s) => Ok(Some(s.parse()
-                            .map_err(|e| anyhow::anyhow!("invalid --device address {s:?}: {e}"))?)),
-      | None => Ok(None),
+      let addr = s.parse()
+                  .map_err(|e| anyhow::anyhow!("invalid --device address {s:?}: {e}"))?;
+      if !out.contains(&addr)
+      {
+         out.push(addr);
+      }
    }
+   Ok(out)
 }
 
 fn init_tracing(args: &Args)
