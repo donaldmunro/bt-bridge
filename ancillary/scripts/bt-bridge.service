@@ -1,0 +1,13 @@
+[Unit]
+Description=bt-bridge Bluetooth to DirectConnect bridge
+After=bluetooth.target network-online.target
+Wants=bluetooth.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/bt-bridge --reconnect --device %DEVICE_LIST%
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
