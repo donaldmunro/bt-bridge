@@ -53,17 +53,30 @@ pub async fn monitor_devices(adapter: Adapter, index: Arc<MergedGattIndex>, hub:
       spawn_watcher(&adapter, addr, &index, &hub, &mdns, allowed, reconnect, &watched);
    }
 
-   while let Some(event) = events.next().await
-   {
-      if let AdapterEvent::DeviceAdded(addr) = event
-      {
-         spawn_watcher(&adapter, addr, &index, &hub, &mdns, allowed, reconnect, &watched);
-      }
-      // DeviceRemoved needs no handling here: the removed device's own event stream
-      // ends and its watcher cleans up after itself.
-   }
+    loop
+    {
+       while let Some(event) = events.next().await
+       {
+          if let AdapterEvent::DeviceAdded(addr) = event
+          {
+             spawn_watcher(&adapter, addr, &index, &hub, &mdns, allowed, reconnect, &watched);
+          }
+          // DeviceRemoved needs no handling here: the removed device's own event stream
+          // ends and its watcher cleans up after itself.
+       }
 
-   warn!("adapter event stream ended; device lifecycle monitoring stopped");
+       warn!("adapter event stream ended; retrying device lifecycle monitoring");
+       tokio::time::sleep(Duration::from_secs(2)).await;
+       match adapter.events().await
+       {
+          | Ok(s) => events = s,
+          | Err(e) =>
+          {
+             warn!(err = %e, "cannot re-subscribe to adapter events");
+             tokio::time::sleep(Duration::from_secs(5)).await;
+          }
+       }
+    }
 }
 
 #[allow(clippy::too_many_arguments)]
@@ -123,7 +136,7 @@ async fn watch_device(adapter: Adapter, addr: Address, index: Arc<MergedGattInde
    }
 
    // Bridged at least once this session - the only devices `reconnect` chases.
-   let mut wanted = bridged;
+   let mut ever_bridged = bridged;
    let mut reconnect_task: Option<JoinHandle<()>> = None;
 
    debug!(%addr, bridged, "lifecycle monitoring started");
@@ -141,10 +154,24 @@ async fn watch_device(adapter: Adapter, addr: Address, index: Arc<MergedGattInde
             }
             // Also covers a link that dropped after `connect()` succeeded but before
             // ServicesResolved fired: the old task already exited, start a fresh one.
-            if reconnect && wanted
+            if reconnect && ever_bridged
             {
                abort_reconnect(&mut reconnect_task);
                reconnect_task = Some(tokio::spawn(reconnect_loop(device.clone(), addr)));
+            }
+         }
+         // Services may already be resolved on a reconnect without a fresh
+         // ServicesResolved(true) event; bridge in that case too.
+         | DeviceProperty::Connected(true) if !bridged =>
+         {
+            if device.is_services_resolved().await.unwrap_or(false)
+            {
+               bridged = try_bridge(&adapter, addr, &index, &hub, &mdns).await;
+               if bridged
+               {
+                  ever_bridged = true;
+                  abort_reconnect(&mut reconnect_task);
+               }
             }
          }
          // Bridge on ServicesResolved(true), not Connected(true): the GATT tree is not
@@ -154,7 +181,7 @@ async fn watch_device(adapter: Adapter, addr: Address, index: Arc<MergedGattInde
             bridged = try_bridge(&adapter, addr, &index, &hub, &mdns).await;
             if bridged
             {
-               wanted = true;
+               ever_bridged = true;
                abort_reconnect(&mut reconnect_task);
             }
          }
@@ -204,7 +231,7 @@ async fn reconnect_loop(device: Device, addr: Address)
       // Reconnected by other means (the user, bluetoothctl, ...) while we slept.
       if device.is_connected().await.unwrap_or(false)
       {
-         debug!(%addr, "already reconnected; stopping reconnect attempts");
+         info!(%addr, "already reconnected; stopping reconnect attempts");
          return;
       }
       match device.connect().await
@@ -214,7 +241,7 @@ async fn reconnect_loop(device: Device, addr: Address)
             info!(%addr, attempt, "reconnected");
             return;
          }
-         | Err(e) => debug!(%addr, attempt, err = %e, "reconnect attempt failed"),
+         | Err(e) => warn!(%addr, attempt, err = %e, "reconnect attempt failed"),
       }
    }
 }

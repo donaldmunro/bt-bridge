@@ -416,6 +416,8 @@ OPTIONS:
       increment the last used port and then listen on this port or the next free port if not available [default: 35100]
   --device <DEVICE>  Restrict to a single BLE device by address (e.g. AA:BB:CC:DD:EE:FF)
   --all-devices      Bridge all connected BLE devices (this is the default; cannot be combined with --device)
+  --wait-for-devices Start with the configured --device addresses that are already connected, then keep retrying the
+    others and restart the bridge when one appears (alias: --wait). Intended for the systemd service.
   --reconnect        Automatically reconnect a bridged device that drops its BLE connection, retrying with backoff until
     it returns (BlueZ does not reconnect LE devices on its own)
   -v, --verbose          Enable verbose (DEBUG) logging
@@ -425,5 +427,9 @@ OPTIONS:
 
 Settings from the GUI and the daemon are persisted in `~/.config/bt-bridge/config.toml`:
 
-Note: the command line bridges the devices connected at startup, it needs to be restarted after
-connecting a new device. The GUI handles this case by offering to restart.
+Note: without `--wait-for-devices` the command line bridges the devices connected at startup
+and needs to be restarted after connecting a new device. The GUI handles this case by offering
+to restart. When running as the systemd service, `--wait-for-devices` is enabled: bt-bridge
+starts with the devices that are already connected, keeps retrying the configured addresses,
+and restarts the bridge when another configured device wakes up. That restart briefly
+interrupts any training app currently connected.
