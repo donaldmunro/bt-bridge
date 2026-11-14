@@ -176,6 +176,7 @@ async fn serve_split(args: &Args, adapter: Adapter, mut devices: Vec<BlueZDevice
       {
          info!(?allowed,
                "no configured devices connected; waiting for one to appear (Ctrl-C to exit)");
+         let bridged = HashSet::new();
          devices = tokio::select!
          {
             _ = signal::ctrl_c() =>
@@ -183,7 +184,7 @@ async fn serve_split(args: &Args, adapter: Adapter, mut devices: Vec<BlueZDevice
                info!("received SIGINT while waiting for devices; exiting");
                return Ok(());
             }
-            found = wait_for_new_devices(&adapter, &allowed, &HashSet::new()) => found,
+            found = wait_for_new_devices(&adapter, &allowed, &bridged) => found,
          };
       }
 
